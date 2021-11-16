@@ -12,14 +12,16 @@ Tag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    tag_name: 'STRING'
+    tag_name: {
+      type: 'TEXT'
+    }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Tag',
+    modelName: 'tag',
   }
 );
 

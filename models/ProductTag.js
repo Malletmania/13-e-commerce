@@ -14,12 +14,18 @@ ProductTag.init(
     },
     product_id: {
       type: 'INTEGER',
-      references: 'product.id'
+      references: {
+        model: 'product',
+        key: 'id'
+      }
       // ref Product model id
     },
     tag_id: {
       type: 'INTEGER',
-      referances: 'tag.is'
+      references: {
+        model: 'tag',
+        key: 'id'
+      }
       // ref Tag model id
     }
     // define columns

@@ -16,14 +16,14 @@ Product.init(
       autoIncrement: true,
     },
     product_name:{
-      type: 'STRING',
+      type: 'TEXT',
       allowNull: false,
     },
     price: {
       type: 'DECIMAL',
       allowNull: false,
       validate: {
-        isDeciaml: true
+        isDecimal: true
       }
     },
     stock: {
@@ -36,7 +36,10 @@ Product.init(
     },
     category_id: {
       type: 'INTEGER',
-      references: 'category.id'
+      references: {
+        model: 'category',
+        key: 'id'
+      }
       // ref Category model id
     }
 
