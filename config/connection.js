@@ -3,7 +3,9 @@ require('dotenv').config();
 
 const sequelize = new Sequelize(
   process.env.CLEARDB_DATABASE_URL
+
 )
+
 // const sequelize = new Sequelize(
 //   process.env.DB_NAME,
 //   process.env.DB_USER,
