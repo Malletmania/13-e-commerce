@@ -6,6 +6,16 @@ class Category extends Model {}
 
 Category.init(
   {
+    id:{
+      type: 'INTEGER',
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    category_name: {
+      type: 'STRING',
+      allowNull: false
+    }
     // define columns
   },
   {
@@ -16,5 +26,6 @@ Category.init(
     modelName: 'category',
   }
 );
+
 
 module.exports = Category;
