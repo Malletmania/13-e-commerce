@@ -36,7 +36,7 @@ Product.init(
     },
     category_id: {
       type: 'INTEGER',
-      references: 'Category.id'
+      references: 'category.id'
       // ref Category model id
     }
 
@@ -46,7 +46,7 @@ Product.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Product',
+    modelName: 'product',
   }
 );
 

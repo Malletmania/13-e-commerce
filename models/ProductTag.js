@@ -14,12 +14,12 @@ ProductTag.init(
     },
     product_id: {
       type: 'INTEGER',
-      references: 'Product.id'
+      references: 'product.id'
       // ref Product model id
     },
     tag_id: {
       type: 'INTEGER',
-      referances: 'Tag.is'
+      referances: 'tag.is'
       // ref Tag model id
     }
     // define columns
@@ -29,7 +29,7 @@ ProductTag.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'Product_Tag',
+    modelName: 'product_Tag',
   }
 );
 
